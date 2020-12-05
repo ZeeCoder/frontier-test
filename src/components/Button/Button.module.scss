@@ -1,0 +1,12 @@
+.root {
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+
+  @media (min-width: 821px) {
+    width: auto;
+    padding: 15px 35px;
+  }
+}

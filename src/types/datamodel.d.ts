@@ -1,10 +1,14 @@
 namespace Frontier {
+  import { ChangeEventHandler } from 'react';
+
   interface Theme {
     primary_color?: string;
     secondary_color?: string;
     background_color?: string;
     text_color?: string;
   }
+
+  type ResolvedTheme = Required<Theme>;
 
   // Describes the job application UI
   interface Job {
@@ -40,5 +44,12 @@ namespace Frontier {
     format?: 'text' | 'email' | 'number';
     pattern?: string;
     step?: number;
+  }
+
+  interface ControlledElement {
+    // "id" is used both by html label elements as well as by Formik as the
+    // element id in the values / errors objects.
+    id: string;
+    onChange: ChangeEventHandler;
   }
 }
