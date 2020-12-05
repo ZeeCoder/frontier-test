@@ -14,3 +14,4 @@
   CSS Custom Properties, depending on browser support requirements. (Unless
   future plans include values that cannot be stored or used as CSS custom
   properties.)
+- I've spent about 3-4 hours on this, give or take.
